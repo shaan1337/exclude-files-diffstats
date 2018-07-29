@@ -1,0 +1,12 @@
+.hideloc{
+    font-size: 1.7em;
+    margin-right: 2px;
+}
+
+.hideloc-disabled{
+    color: #ccc
+}
+
+.hideloc-enabled{
+    color: #cb2431
+}

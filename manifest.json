@@ -1,0 +1,24 @@
+{
+    "name": "Exclude files from Diff Stats on Github",
+    "version": "1.0",
+    "description": "Exclude selected files from diff stats in Github Pull Requests and commits!",
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+    "content_scripts": [{
+        "css": [ "hideloc.css", "fontello.css" ],
+        "js": [ "hideloc.js" ],
+        "matches":["http://github.com/*", "https://github.com/*","http://www.github.com/*", "https://www.github.com/*"]
+    }],
+    "permissions": [
+        "tabs"
+    ],
+    "manifest_version": 2,
+    "icons": {
+        "16": "icons/icon_16.png",
+        "32": "icons/icon_32.png",
+        "48": "icons/icon_48.png",
+        "128": "icons/icon_128.png"
+    },
+    "web_accessible_resources": ["font/*"]
+}
